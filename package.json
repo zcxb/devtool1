@@ -5,7 +5,7 @@
   "main": "./dist/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prestart": "webpack --config webpack.common.config.js",
+    "build": "webpack --config webpack.dev.config.js",
     "start": "electron ."
   },
   "author": "zcxb",
@@ -16,6 +16,7 @@
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
     "@types/react": "^16.8.23",
     "@types/react-dom": "^16.8.4",
     "react": "^16.8.6",

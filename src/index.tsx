@@ -1,9 +1,11 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-import Hello from "./components/Hello";
+import HomePage from "./components/HomePage";
 
 ReactDOM.render(
-  <Hello name="TypeScript" enthusiasmLevel={10} />,
+  <React.StrictMode>
+    <HomePage />
+  </React.StrictMode >,
   document.getElementById('root') as HTMLElement
 );

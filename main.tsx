@@ -1,6 +1,7 @@
 import { app, BrowserWindow, Menu, MenuItem, dialog } from'electron';
 
 let mainWindow: BrowserWindow = null;
+Menu.setApplicationMenu(null)
 let createWindow = function() {
     mainWindow = new BrowserWindow({
       width:800, 
